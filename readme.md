@@ -1,1 +1,1 @@
-移动端h5 省市区选择
+a selected ui-component on mobile
