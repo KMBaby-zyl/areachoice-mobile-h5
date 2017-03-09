@@ -60,9 +60,8 @@
     function select_choice(options){
         this.options = $.extend({},options);
 
-        this.cb_confirm = options&&options['confirm'] ? options['confirm'] : function(){};
+        this.cb_confirm = options&& typeof options['confirm'] === 'function' ? options['confirm'] : function(){};
         this._data = options.data;
-        this._temp = options.template;
         this.init();
     }
 
